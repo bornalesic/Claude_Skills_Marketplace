@@ -1,0 +1,12 @@
+# A pack: several skills sold together. Copy to content/packs/<your-pack-slug>.yaml.
+# The file name (without .yaml) is the slug: permanent once published. Full rules: docs/contracts/content-format.md
+
+title: Your Pack Title          # at most 60 characters
+status: draft                   # draft | published | archived
+price_eur: 24                   # VAT included, greater than 0; usually less than the skills bought separately
+summary: >-
+  One sentence about who this pack is for and what it gets them.
+skills:                         # 2 or more skill slugs; all must be published when the pack is published
+  - first-skill-slug
+  - second-skill-slug
+updated: 2026-10-26

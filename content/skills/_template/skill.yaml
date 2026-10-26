@@ -1,0 +1,50 @@
+# Store metadata for one skill. Copy this whole folder to content/skills/<your-slug>/.
+# The folder name is the slug: lowercase letters, numbers and hyphens, 3-48 chars. Permanent once published.
+# Full rules: docs/contracts/content-format.md
+
+# Shown on cards and the skill page. At most 60 characters.
+title: Your Skill Title
+
+# The MCP tool name Claude sees. Lowercase, numbers, underscores; 3-48 chars; must not start with "upskillzz_".
+# Permanent once published. Convention: the slug with hyphens turned into underscores.
+tool_name: your_skill_title
+
+# Semver. Bump it whenever SKILL.md, a reference or an action changes.
+version: 0.1.0
+
+# draft = synced but invisible and unusable; published = for sale; archived = hidden, owners keep it.
+status: draft
+
+# Price in euros, VAT included. 0 = free. Otherwise at least 0.50, at most 2 decimals.
+price_eur: 9
+
+# One sentence for cards. At most 140 characters.
+summary: >-
+  One clear sentence about the result this skill gets the buyer.
+
+# One of: writing, sales, marketing, productivity, research, data, engineering, design, education, career, finance, other
+category: productivity
+
+# Up to 8 kebab-case tags.
+tags: [example]
+
+# 1-6 concrete outcomes, each at most 120 characters. Shown as bullets on the skill page.
+outcomes:
+  - A concrete thing the buyer gets
+  - Another concrete thing
+
+# Which Claude apps it works in. Any of: claude-web, claude-desktop, claude-mobile, claude-code
+works_with: [claude-web, claude-desktop, claude-mobile, claude-code]
+
+# Optional extra files Claude loads on demand. Remove the list if unused.
+references:
+  - name: example-reference
+    title: Example reference
+    file: references/example-reference.md
+
+# Optional server-side tools (TypeScript files in actions/). Remove the list if unused.
+# actions:
+#   - file: actions/score.ts
+
+# Last meaningful update, shown on the page.
+updated: 2026-10-26
